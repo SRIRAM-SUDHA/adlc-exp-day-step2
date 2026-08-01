@@ -48,7 +48,7 @@ jobs:
         run: dotnet restore
 
       - name: Run unit tests
-        run: dotnet test Tests/Tests.csproj --verbosity normal
+        run: dotnet test OuterloopLabApi.sln --verbosity normal
 
       - name: Build backend
         run: dotnet build -c Release
